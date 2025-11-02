@@ -1,0 +1,182 @@
+/* 全局样式：配色与布局 */
+:root {
+  --primary: #8B4513; /* 棕色主色调 */
+  --bg-light: #F5F0E1; /* 浅米色背景 */
+  --bg-medium: #E8DCC2; /* 中米色背景 */
+  --text-dark: #333;
+}
+
+body {
+  font-family: "Microsoft YaHei", sans-serif;
+  background-color: var(--bg-medium);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+}
+
+/* 导航栏样式 */
+.nav-bar {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+/* 卡片容器样式 */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* 卡片样式 */
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 1rem;
+  width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  color: var(--primary);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.card-price {
+  color: #D2691E;
+  font-weight: bold;
+}
+
+.card-btn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/* 横幅样式 */
+.banner {
+  background-color: var(--bg-light);
+  padding: 2rem;
+  text-align: center;
+}
+
+/* 魔法祝福区域 */
+.magic-section {
+  background-color: white;
+  padding: 1rem;
+  margin: 2rem;
+  border: 1px solid #ccc;
+}
+
+/* 选择理由区域 */
+.reason-section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.reason-card {
+  text-align: center;
+}
+
+/* 全局样式：强化优先级 */
+.vp-doc body {
+  font-family: "Microsoft YaHei", sans-serif;
+  background-color: #E8DCC2; /* 匹配原图浅棕色背景 */
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.vp-doc .nav-bar {
+  background-color: #8B4513; /* 深棕色导航栏 */
+  color: white;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vp-doc .nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.vp-doc .banner {
+  background-color: #F5F0E1; /* 浅米色横幅 */
+  padding: 2rem;
+  text-align: center;
+}
+
+.vp-doc .card-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.vp-doc .card {
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  width: 150px; /* 缩小卡片宽度，匹配原图比例 */
+}
+
+.vp-doc .card-title {
+  color: #8B4513;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.vp-doc .card-price {
+  color: #D2691E;
+  font-weight: bold;
+}
+
+.vp-doc .card-btn {
+  background-color: #8B4513;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0; /* 移除圆角，匹配原图按钮样式 */
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.vp-doc .magic-section {
+  background-color: white;
+  padding: 1rem;
+  margin: 2rem auto;
+  border: 1px solid #ccc;
+  width: 600px; /* 限制宽度，居中显示 */
+}
+
+.vp-doc .reason-section {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.vp-doc .reason-card {
+  text-align: center;
+}

@@ -8,11 +8,14 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: "首页", link: "/" },
+      { text: "购买云服务器", link: "/buy" },
+      { text: "活动", link: "/activity" },
+      { text: "服务端", link: "/server" },
+      { text: "找插件", link: "/plugin" },
     ],
     footer: {
-      copyright: "© 本项目由InTeam制作维护"
+      copyright: "版权所有 © 2025 黎明之前. 保留所有权利."
     },
 
     sidebar: [
