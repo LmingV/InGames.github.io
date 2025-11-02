@@ -3,8 +3,8 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/InGames.github.io/",
-  title: "My Awesome Project",
-  description: "A VitePress Site",
+  title: "InGames",
+  description: "回声宇宙官方WIKI",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
