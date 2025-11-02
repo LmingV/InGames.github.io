@@ -1,183 +1,182 @@
 ---
 layout: home
-
+title: 黎明之前
 hero:
-  name: "InGames"
-  text: "游戏爱好者的知识库"
-  tagline: 探索游戏设计、开发与玩家社区的精彩世界
+  name: 
+  text: 旧神世界的新纪元
+  tagline: 挖掘·淬炼·创世·新生
   image:
-    src: /logo.png
-    alt: InGames Logo
+    src: /home.png
+    alt: HomePIC
   actions:
     - theme: brand
-      text: 开始探索
-      link: /guide/
+      text: 神谕密卷
+      link: /about/first
     - theme: alt
-      text: 查看项目
-      link: https://github.com/InGames.github.io
-
-features:
-  - icon: 🎮
-    title: 游戏设计指南
-    details: 从核心机制到关卡设计，掌握游戏创作的关键要素
-    link: /design/
-    linkText: 了解更多
-
-  - icon: 💻
-    title: 开发教程
-    details: 涵盖Unity、Unreal及前端游戏开发的实用教程与技巧
-    link: /development/
-    linkText: 开始学习
-
-  - icon: 👥
-    title: 社区交流
-    details: 加入玩家与开发者社区，分享经验与创意
-    link: /community/
-    linkText: 加入我们
-
-  - icon: 📊
-    title: 行业分析
-    details: 最新游戏市场趋势、数据报告与行业洞察
-    link: /industry/
-    linkText: 查看报告
-
-  - icon: 📚
-    title: 资源库
-    details: 精选工具、素材与学习资源，助力游戏创作
-    link: /resources/
-    linkText: 浏览资源
-
-  - icon: 🎯
-    title: 玩家攻略
-    details: 热门游戏攻略、隐藏彩蛋与进阶技巧分享
-    link: /guides/
-    linkText: 查看攻略
+      text: 游戏指南
+      link: /tutorials/wiki
 ---
 
-## 📰 最新动态
-
-<div class="news-grid">
-  <div class="news-card">
-    <h3>2023年游戏行业报告发布</h3>
-    <p>包含全球游戏市场规模、用户增长及热门品类分析</p>
-    <a href="/news/report-2023" class="read-more">阅读全文 →</a>
-  </div>
-  
-  <div class="news-card">
-    <h3>Unity 2023新特性详解</h3>
-    <p>探索最新版本带来的性能提升与工作流优化</p>
-    <a href="/news/unity-2023" class="read-more">阅读全文 →</a>
-  </div>
-  
-  <div class="news-card">
-    <h3>独立游戏开发者访谈</h3>
-    <p>揭秘《星露谷物语》团队的创作历程与经验</p>
-    <a href="/news/indie-interview" class="read-more">阅读全文 →</a>
-  </div>
-</div>
-
-## 🎉 热门内容
-
-| 分类 | 热门文章 | 阅读量 |
-|------|----------|--------|
-| 设计 | 《游戏关卡设计的7个原则》 | 2.4k |
-| 开发 | 《Three.js实现3D游戏场景》 | 1.8k |
-| 攻略 | 《艾尔登法环全Boss攻略》 | 5.2k |
-| 资源 | 《2023免费游戏素材网站汇总》 | 3.7k |
-
 <style>
-/* 新闻卡片样式 */
-.news-grid {
+:root {
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient(135deg, #d4af37 30%, #7a3b3b 70%);
+  --vp-button-brand-bg: #2c1a0f;
+  --vp-button-brand-hover-bg: #4a2c1a;
+  --vp-c-brand: #d4af37;
+
+  --bg-color: #f5f5f5;
+  --text-color: #333;
+  --link-color: #d4af37;
+  --link-hover-color: #7a3b3b;
+  --border-color: #ddd;
+  --card-bg-color: #fff;
+  --card-border-color: #4a2c1a;
+}
+
+.dark {
+  --bg-color: #1a120b;
+  --text-color: #666;
+  --link-color: #d4af37;
+  --link-hover-color: #7a3b3b;
+  --border-color: #4a2c1a;
+  --card-bg-color: #2c1a0f;
+  --card-border-color: #d4af37;
+}
+
+.mechanics-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   margin: 3rem 0;
-  padding: 0 1rem;
 }
 
-.news-card {
-  background: var(--vp-c-bg-soft);
-  border-radius: var(--vp-radius-lg);
+.mechanic-card {
   padding: 1.5rem;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  border: 1px solid var(--card-border-color);
+  background-color: var(--card-bg-color);
+  transition: transform 0.3s;
 }
 
-.news-card:hover {
+.mechanic-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+  border-color: var(--link-color);
 }
 
-.news-card h3 {
-  margin: 0 0 1rem 0;
-  color: var(--vp-c-text-1);
-  font-size: 1.2rem;
-}
-
-.news-card p {
-  color: var(--vp-c-text-2);
+.card-icon {
+  font-size: 2.5rem;
   margin-bottom: 1rem;
+  color: var(--link-color);
 }
 
-.read-more {
-  display: inline-block;
-  color: var(--vp-c-brand);
-  font-weight: 500;
-  text-decoration: none;
-  transition: color 0.2s;
+.progress-steps {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin: 4rem 0;
 }
 
-.read-more:hover {
-  color: var(--vp-c-brand-dark);
-  text-decoration: underline;
+.step {
+  text-align: center;
+  flex: 0 1 200px;
 }
 
-/* 表格样式优化 */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 2rem 0;
+.step-marker {
+  width: 40px;
+  height: 40px;
+  background: var(--link-color);
+  color: var(--bg-color);
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  line-height: 40px;
+  font-weight: bold;
 }
 
-th, td {
-  padding: 0.8rem 1rem;
-  text-align: left;
-  border-bottom: 1px solid var(--vp-c-divider);
+.footer {
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-color);
+    padding: 20px 0;
+    background-color: var(--bg-color);
+    border-top: 1px solid var(--border-color);
 }
 
-th {
-  color: var(--vp-c-text-1);
-  font-weight: 600;
-  background: var(--vp-c-bg-soft);
+.footer a {
+    color: var(--link-color);
+    text-decoration: none;
 }
 
-tr:hover {
-  background: var(--vp-c-bg-soft-up);
+.footer a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
 }
 
-/* 响应式调整 */
 @media (max-width: 768px) {
-  .news-grid {
-    grid-template-columns: 1fr;
+  .progress-steps {
+    flex-direction: column;
+    gap: 2rem;
   }
-  
-  table {
-    font-size: 0.9rem;
-  }
-  
-  th, td {
-    padding: 0.6rem 0.8rem;
+
+  .footer {
+    font-size: 12px;
+    padding: 15px 0;
   }
 }
 </style>
 
----
+## ⚒️ 核心玩法体系
 
-<div style="text-align: center; margin-top: 5rem; padding: 2rem; background: var(--vp-c-bg-soft); border-radius: var(--vp-radius-lg);">
-  <h3>加入我们的游戏开发者社区</h3>
-  <p style="margin: 1rem 0 2rem 0; max-width: 600px; margin-left: auto; margin-right: auto;">
-    与 thousands 名游戏爱好者一起交流学习，获取最新资讯与资源
-  </p>
-  <a href="/community/join" style="display: inline-block; background: var(--vp-c-brand); color: white; padding: 0.8rem 2rem; border-radius: var(--vp-radius-md); text-decoration: none; font-weight: 500;">
-    立即加入
-  </a>
+<div class="mechanics-grid">
+
+<div class="mechanic-card">
+<div class="card-icon">⛏️</div>
+### 神骸矿狱
+- 动态生成的泰坦矿脉
+- 星纹钢淬炼系统
+- 罪孽值警报机制
+</div>
+
+<div class="mechanic-card">
+<div class="card-icon">🏰</div>
+### 浮空神域
+- 可扩展空岛架构
+- 粘液科技核心
+- 神域风格化改造
+</div>
+
+<div class="mechanic-card">
+<div class="card-icon">🔗</div>
+### 契约统御
+- 神格仆从进化
+- 精灵元素共鸣
+- 灵魂绑定装备
+</div>
+</div>
+
+## 🛣️ 新手指引
+
+<div class="progress-steps">
+
+<div class="step">
+<div class="step-marker">1</div>
+### 奠基
+获取基础工具  
+建立初始空岛
+</div>
+
+<div class="step">
+<div class="step-marker">2</div>
+### 觉醒
+激活首只仆从  
+完成首次淬炼
+</div>
+
+<div class="step">
+<div class="step-marker">3</div>
+### 抉择
+宣誓效忠阵营  
+解锁进阶科技
+</div>
+
 </div>
