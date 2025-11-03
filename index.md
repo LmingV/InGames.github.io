@@ -14,7 +14,7 @@ hero:
       link: /about/first
     - theme: alt
       text: 游戏指南
-      link: /tutorials/wiki
+      link: /tutorials/upgrade
 ---
 
 <style>
