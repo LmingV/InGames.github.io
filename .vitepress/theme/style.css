@@ -137,3 +137,13 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+/* 示例：假设目标区域是首页的hero区域，类名为.hero */
+.hero {
+  /* 替换为你的图片路径（public文件夹下的图片直接写 /文件名） */
+  background-image: url('/BG-1.png') !important;
+  background-size: cover !important; /* 覆盖容器 */
+  background-position: center !important; /* 居中显示 */
+  background-repeat: no-repeat !important; /* 不重复 */
+  /* 如果区域有默认背景色，覆盖它 */
+  background-color: transparent !important;
+}

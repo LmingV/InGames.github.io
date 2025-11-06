@@ -6,15 +6,15 @@ import baseConfig from 'vitepress-theme-mild/config';
 export default defineConfigWithTheme<ThemeConfig>({
   extends: baseConfig,
   base: "/InGames.github.io/",
-  title: "InGames",
+  title: " ",
   description: "回声宇宙官方WIKI",
+  css: ['./custom.css'], 
   themeConfig: {
+    logo: '/logo.png',
     nav: [
       { text: "首页", link: "/" },
-      { text: "购买云服务器", link: "/buy" },
-      { text: "活动", link: "/activity" },
-      { text: "服务端", link: "/server" },
-      { text: "找插件", link: "/plugin" },
+      { text: "神谕密卷", link: "/about/first" },
+      { text: "游戏指南", link: "/tutorials/upgrade" },
     ],
     footer: {
       copyright: "版权所有 © 2025 黎明之前. 保留所有权利."

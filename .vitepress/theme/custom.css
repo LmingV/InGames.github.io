@@ -180,3 +180,12 @@ body {
 .vp-doc .reason-card {
   text-align: center;
 }
+
+.VPNav .VPNavLogo {
+  padding: 4px 0; /* 减少上下间距 */
+}
+/* 调整图片大小 */
+.VPNav .VPNavLogo img {
+  width: 200px; /* 自定义宽度 */
+  height: auto; /* 保持宽高比 */
+}
