@@ -5,7 +5,7 @@ import baseConfig from 'vitepress-theme-mild/config';
 
 export default defineConfigWithTheme<ThemeConfig>({
   extends: baseConfig,
-  base: "/InGames.github.io/",
+  base: "/LmingV.github.io/",
   title: " ",
   description: "回声宇宙官方WIKI",
   css: ['./custom.css'], 
