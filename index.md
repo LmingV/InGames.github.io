@@ -128,10 +128,9 @@ hero:
 ## ⚒️ 核心玩法体系
 
 <div class="mechanics-grid">
-
 <div class="mechanic-card">
 <div class="card-icon">⛏️</div>
-### 神骸矿狱
+神骸矿狱
 - 动态生成的泰坦矿脉
 - 星纹钢淬炼系统
 - 罪孽值警报机制
@@ -139,7 +138,7 @@ hero:
 
 <div class="mechanic-card">
 <div class="card-icon">🏰</div>
-### 浮空神域
+浮空神域
 - 可扩展空岛架构
 - 粘液科技核心
 - 神域风格化改造
@@ -147,11 +146,12 @@ hero:
 
 <div class="mechanic-card">
 <div class="card-icon">🔗</div>
-### 契约统御
+契约统御
 - 神格仆从进化
 - 精灵元素共鸣
 - 灵魂绑定装备
 </div>
+
 </div>
 
 ## 🛣️ 新手指引
