@@ -59,16 +59,21 @@ const config = {
         title: 'InGames Wiki',
         logo: {
           alt: 'InGames Wiki Logo',
-          src: 'img/logo.svg',
+          src: 'img/home.png',
         },
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'echoverseSidebar',
             position: 'left',
-            label: '文档',
+            label: 'Echoverse-回声宇宙',
           },
-          {to: '/blog', label: '博客', position: 'left'},
+          {
+            type: 'docSidebar',
+            sidebarId: 'dawnbeforeSidebar',
+            position: 'left',
+            label: 'DawnBefore-黎明之前',
+          },
           {
             href: 'https://github.com/LmingV/InGames.github.io',
             label: 'GitHub',
@@ -90,11 +95,15 @@ const config = {
           },
           {
             title: '更多',
-            items: [
+            items: [              
               {
-                label: '博客',
-                to: '/blog',
+                label: '官方交流群-①',
+                href: 'https://qm.qq.com/q/oZ0eFOF91C',
               },
+              {
+                label: '官方交流群-②',
+                href: 'https://qm.qq.com/q/Q8CDwvVzW',
+              },              
               {
                 label: 'GitHub',
                 href: 'https://github.com/LmingV/InGames.github.io',
@@ -102,7 +111,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} InGames Wiki. 由 Docusaurus 构建。`,
+        copyright: `Copyright © ${new Date().getFullYear()} InGames Wiki. 最终解释权归InGames团队所有`,
       },
       prism: {
         theme: prismThemes.github,
