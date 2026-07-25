@@ -1,4 +1,5 @@
 ---
+sidebar_class_name: icon-monster
 sidebar_position: 7
 ---
 # 怪物与BOSS图鉴 · 废土众生

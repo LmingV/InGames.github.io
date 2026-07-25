@@ -7,7 +7,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'InGames Wiki',
   tagline: '游戏资料百科',
-  favicon: 'img/logo.svg',
+  favicon: 'img/home.png',
 
   // 站点最终访问地址（自定义域名）
   url: 'https://InGames.wiki',

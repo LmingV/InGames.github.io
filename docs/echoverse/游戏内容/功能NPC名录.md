@@ -1,4 +1,5 @@
 ---
+sidebar_class_name: icon-npc
 sidebar_position: 11
 ---
 # 功能NPC名录 · 主城众生
